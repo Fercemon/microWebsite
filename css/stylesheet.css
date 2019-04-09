@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:700|Rubik:900');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: aliceblue;
+    text-align: center;
+}
+
+.home-body{
+    background: #56445a;
+    text-align: center;
+}
+
+
+h1{
+font-size: 2.2em;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+
+}
+
+h2{
+    font-size: 1.5em;
+    color: #d9d7d7;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+}
+
+h3{
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+
+p{
+ text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 1em 0;
+}
+
+a{
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    color: #AC0000;
+    cursor: pointer;
+}
+
+
+
+/*///////////////////////////HEADER/////////////////////////*/
+
+.comun-nav{
+    display: none;
+}
+
+.pages-logo{
+    display: none;
+}
+
+header{
+    background: #C93939;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+        "kommune-logo . . bike-logo";
+    align-items: center;
+    height: 5em;
+}
+
+
+.kommune-logo{
+    grid-area: kommune-logo;
+    height: 5em;
+    width: auto;
+
+}
+
+
+.bike-logo{
+    grid-area: bike-logo;
+    height: 3em;
+    width: auto;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.overlay a {
+    padding: 0.7em;
+    text-decoration: none;
+    font-size: 1.7em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.overlay a:focus a:hover{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    color: #fff;
+    position: absolute;
+    right: 0.5em;
+}
+
+
+/*//////////////////////////////HOME PAGE///////////////////////*/
+.home-main{
+    background-image: url(../img/small/home-page-small.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-rows: 90vh;
+}
+
+.downbtn{
+    position: absolute;
+    bottom: 0.5em;
+    left: 49.99%;
+    right: 49.99%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.h-transports{
+    font-size: 1.2em;
+    color: #fff;
+    width: 60%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    padding-left: 1em;
+    text-align: left;
+
+}
+
+.homeh1{
+    padding-top: 4em;
+    padding-bottom: 0.3em;
+}
+
+
+
+.a-transports{
+
+    text-decoration: none;
+
+}
+
+.home-section1{
+    background-image: url(../img/small/s-train-small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 6em;
+    padding-top: 1em;
+    margin: 2em 0;
+}
+
+.home-section2{
+    background-image: url(../img/small/harbour-small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 7.5em;
+    padding-top: 3em;
+    margin-bottom: 2em;
+}
+
+.home-section3{
+    background-image: url(../img/small/denmark-sharebike-small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 3em 0;
+    margin-bottom: 2em;
+}
+
+.rent{
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.h-rent{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+/*//////////////////////////////PAGES HEADER////////////////////////////////////*/
+
+
+.pages-header{
+    background: #C93939;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+        "backbtn . . bike-logo";
+    align-items: center;
+    height: 5em;
+}
+
+.backbtn{
+    grid-area: backbtn;
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none
+}
+
+.bike-logo{
+    grid-area: bike-logo;
+    height: 3em;
+    width: auto;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+/*///////////////////////////////TRANSPORT PAGE/////////////////////////////*/
+
+.transport-main{
+    padding: 1em 1em;
+}
+
+.subline{
+    height: 0.2em;
+    width: 3.5em;
+    border-bottom: 0.2em solid #AC0000;
+}
+
+
+.video{
+    position: relative;
+    height: 0;
+    margin: 0 1em;
+    padding-bottom: 56.25%;
+    padding-top: 25PX;
+
+}
+
+
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+
+
+/*///////////////////////////////HARBOUR PAGE///////////////////////////////*/
+
+
+.harbour-main{
+    padding: 1em;
+}
+
+.pages-headers{
+    color: #AC0000;
+    padding: 0 1em 1em 1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7em;
+    font-style: normal;
+}
+
+
+
+
+
+
+/*///////////////////////////////////////IPAD VERSION//////////////////////*/
+
+
+@media all and (min-width: 750px) {
+
+    h1{
+font-size: 3.2em;
+
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+h3{
+    font-size: 2.2em;
+}
+
+
+p{
+    font-size: 2.2em;
+}
+
+a{
+    font-size: 2.2em;
+}
+
+
+
+
+    /*//////////////////////////////////////HEADER///////////////////////////*/
+
+header{
+    height: 6em;
+}
+
+
+
+.kommune-logo{
+    height: 6em;
+
+}
+
+.bike-logo{
+    height: 4em;
+}
+
+
+
+.overlay a {
+    font-size: 2.7em;
+
+}
+
+
+
+/*//////////////////////////////HOME PAGE///////////////////////*/
+.home-main{
+
+    grid-template-rows: 93vh;
+    }
+
+.downbtn{
+    font-size: 3em;
+}
+
+.h-transports{
+    font-size: 0.8em;
+    width: 60%;
+}
+
+    .home-sb{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr;
+        grid-template-areas:
+            "a-transports1 a-transports2"
+            "a-transports3 a-transports3";
+        column-gap: 0.5em;
+    }
+
+
+
+    .a-transports{
+        padding: 0;
+    }
+
+.a-transports1{
+    grid-area: a-transports1;
+}
+
+.a-transports2{
+    grid-area: a-transports2;
+
+}
+
+.a-transports3{
+    grid-area: a-transports3;
+
+}
+
+
+.home-section1{
+
+    padding-bottom: 3.1em;
+    padding-top: 0.5em;
+    margin: 1em 0;
+}
+
+.home-section2{
+    padding-bottom: 3.1em;
+    padding-top: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.home-section3{
+    padding: 2em 0;
+    margin-bottom: 1em;
+}
+
+
+.h-rent{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+/*//////////////////////////////PAGES HEADER////////////////////////////////////*/
+
+
+.pages-header{
+    height: 6em;
+}
+
+.backbtn{
+    font-size: 3em;
+}
+
+.bike-logo{
+    height: 4em;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+
+/*///////////////////////////////TRANSPORT PAGE/////////////////////////////*/
+
+.transport-main{
+    padding: 1em 2em;
+}
+
+.subline{
+    width: 6em;
+}
+
+    .video{
+    margin: 0 2em;
+}
+
+
+/*///////////////////////////////HARBOUR PAGE///////////////////////////////*/
+
+
+.harbour-main{
+    padding: 1em 2em;
+}
+
+.pages-headers{
+    padding: 0 2em 1em 2em;
+    font-size: 2.7em;
+}
+
+}
+
+
+
+/*///////////////////////////////////desktop version////////////////////////////*/
+
+@media all and (min-width: 1100px) {
+
+
+    h1{
+font-size: 4.2em;
+
+}
+
+h2{
+    font-size: 3.5em;
+}
+
+
+h3{
+    font-size: 1.2em;
+}
+
+
+p{
+    font-size: 1.2em;
+}
+
+a{
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+  header{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+        "kommune-logo comun-nav";
+    align-items: center;
+    height: 7em;
+}
+
+
+
+.kommune-logo{
+    grid-area: kommune-logo;
+    height: 7em;
+    width: auto;
+    padding: 0 0 0 1em;
+
+}
+
+    .bike-logo{
+        display: none;
+    }
+
+    .overlay{
+        display: none;
+    }
+
+
+
+.comun-nav {
+    display: grid;
+    grid-area: comun-nav;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+    .home{
+        grid-column: 1;
+    }
+
+    .transport{
+        grid-column: 2;
+    }
+
+
+    .harbour{
+        grid-column: 3;
+    }
+
+
+    .comun-nav a{
+    text-decoration: none;
+    font-size: 1.7em;
+    color: #fff;
+
+}
+
+.comun-nav a:hover{
+    color: #000;
+    font-size: 2em;
+}
+
+    .active {
+    color: #000;
+}
+
+
+/*////////////////////////////////////HOME PAGE/////////////////////////////////*/
+
+
+
+
+    .home-main{
+    background-image: url(../img/large/home-page-large.jpg);
+    grid-template-rows: 90vh;
+}
+
+.downbtn{
+    position: absolute;
+    bottom: 0.5em;
+    left: 49.99%;
+    right: 49.99%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 3em;
+}
+
+.homeh1{
+    padding-top: 1em;
+}
+
+
+
+    .h-transports{
+    font-size: 1.3em;
+    width: 70%;
+}
+
+    .home-sb{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "a-transports1 a-transports2 a-transports3";
+        column-gap: 0.5em;
+    }
+
+.a-transports1{
+    grid-area: a-transports1;
+}
+
+.a-transports2{
+    grid-area: a-transports2;
+
+}
+
+.a-transports3{
+    grid-area: a-transports3;
+}
+
+
+.home-section1{
+
+    padding-bottom: 10.8em;
+    padding-top: 2em;
+    margin: 2em 0;
+}
+
+.home-section2{
+    padding-bottom: 12.5em;
+    padding-top: 2em;
+    margin: 2em 0;
+}
+
+.home-section3{
+    padding: 2em 0 12.5em 0;
+    margin: 2em 0;
+}
+
+
+
+/*///////////////////////////////////PAGES HEADER////////////////////////////////*/
+
+
+    .pages-header{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+        "pages-logo comun-nav";
+    align-items: center;
+    height: 7em;
+}
+
+
+    .pages-logo{
+        display: block;
+        grid-area: pages-logo;
+        height: 7em;
+        padding:0 0 0 1em;
+        width: auto;
+    }
+
+
+    .backbtn{
+        display: none;
+    }
+
+
+/*//////////////////////////////////////TRANSPORT PAGE///////////////////////////*/
+
+   .transport-main{
+    padding: 1em 20em;
+}
+
+.subline{
+    width: 3.5em;
+}
+
+.video{
+    margin: 0 20em;
+}
+
+    iframe{
+    height: 70%;
+}
+
+ /*///////////////////////////////HARBOUR PAGE///////////////////////////////*/
+    img{
+        padding: 2em 0;
+        height: 57%;
+        width: auto;
+    }
+
+.harbour-main{
+    padding: 1em 20em;
+}
+
+.pages-headers{
+    padding: 0 2em 1em 2em;
+    font-size: 2.7em;
+}
+
+    .harbourcircle{
+        height: 98%;
+    }
+
+}
+
+
+

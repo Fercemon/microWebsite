@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+
+
+
+    <title>HARBOUR CIRCLE</title>
+</head>
+
+<body>
+   <header class="pages-header">
+      <img src="img/kobenhavns-kommune-logo.png" alt="kommune logo" class="pages-logo">
+       <a href="index.html" class="backbtn">&lsaquo;</a>
+       <img src="img/Bike_logo.png" class="bike-logo" alt="logo bike" onclick="openNav()">
+
+    <nav id="myNav" class="overlay">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+    <a href="index.html" class="home">Home</a>
+    <a href="transport.html" class="transport">Transport</a>
+    <a href="harbour.html" class="harbour">Harbour circle</a>
+    </div>
+    </nav>
+
+
+    <nav class="comun-nav">
+    <a href="index.html" class="home">Home</a>
+    <a href="transport.html" class="transport">Transport</a>
+    <a href="harbour.html" class="harbour active">Harbour circle</a>
+    </nav>
+
+
+    </header>
+
+    <img src="img/harbour.jpg" alt="train" class="imgharbour harbourcircle">
+
+    <main class=" main-content mainpages harbour-main">
+        <h2 class="pages-headers">The Harbour Cirlce</h2>
+        <p>The Copenhagen Harbour Circle is a new combined cycle route and footpath along the city’s inner harbour.<br><br>
+The route guides you through regenerated docklands with vibrant urban life and past the city’s landmark waterside attractions. The Harbour Circle is a shortcut to the rich diversity the city has to oﬀer and can be experienced on bike rides, running trips and leisurely walks.<br><br>
+The Copenhagen Harbour Circle is a cycle route and footpath that runs through an area of great contrast with magniﬁcent waterfront architecture nestled alongside rickety houseboats. With its waterside recreational activities, the Copenhagen harbour area is the very essence of what makes the city such a vibrant and liveable experience.<br><br>
+The Harbour Circle route not only oﬀers a new access way to the area but also a window to the dynamic transformation Copenhagen is currently undertaking and oﬀers a unique harbourside experience in the heart of the city.</p>
+    </main>
+
+    <aside class="sidebar harbour-sb">
+        <img src="img/copenhagen_city_bike_credit_woco.jpg" class="imgharbour groupharbour" alt="group of people cling">
+    </aside>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+</html>

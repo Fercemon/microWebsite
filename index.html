@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+
+
+
+    <title>BIKE LIKE A DANE</title>
+</head>
+
+<body class="home-body">
+   <header>
+       <img src="img/kobenhavns-kommune-logo.png" alt="kommune logo" class="kommune-logo">
+       <img src="img/Bike_logo.png"  class="bike-logo" alt="logo bike" onclick="openNav()">
+
+    <nav id="myNav" class="overlay">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+    <a href="index.html" class="home">Home</a>
+    <a href="transport.html" class="transport">Transport</a>
+    <a href="harbour.html" class="harbour">Harbour circle</a>
+    </div>
+    </nav>
+
+
+
+    <nav class="comun-nav">
+    <a href="index.html" class="home active">Home</a>
+    <a href="transport.html" class="transport">Transport</a>
+    <a href="harbour.html" class="harbour">Harbour circle</a>
+    </nav>
+
+    </header>
+    <main class="main-content home-main">
+       <section>
+        <h1 class="homeh1">BIKE LIKE A DANE</h1>
+        <h2 class="homeh2">feel like a viking</h2>
+        </section>
+        <a href="#sections" class="downbtn">&#8744;</a>
+    </main>
+
+
+    <aside class="sidebar home-sb home-sbd" id="sections">
+        <a href="transport.html" class="a-transports a-transports1"><section class="home-section home-section1">
+            <h3 class="h-transports">The bike on the metro, train and harbour bus</h3>
+        </section></a>
+           <a href="harbour.html" class="a-transports a-transports2"><section class="home-section home-section2">
+            <h3 class="h-transports">The harbour circle</h3>
+        </section></a>
+
+          <a href="https://bycyklen.dk/en/" class="rent a-transports3" target="_blank"> <section class="home-section home-section3">
+            <h3 class="h-transports h-rent">Rent a bike here</h3>
+        </section></a>
+
+    </aside>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+</html>

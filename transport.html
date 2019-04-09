@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+
+
+
+    <title>BIKE ON PUBLIC TRANSPORT</title>
+</head>
+
+<body>
+    <header class="pages-header">
+      <img src="img/kobenhavns-kommune-logo.png" alt="kommune logo" class="pages-logo">
+       <a href="index.html" class="backbtn">&lsaquo;</a>
+       <img src="img/Bike_logo.png" class="bike-logo" alt="logo bike" onclick="openNav()">
+
+    <nav id="myNav" class="overlay">
+    <a class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+    <a href="index.html" class="home">Home</a>
+    <a href="transport.html" class="transport">Transport</a>
+    <a href="harbour.html" class="harbour">Harbour circle</a>
+    </div>
+    </nav>
+
+    <nav class="comun-nav">
+    <a href="index.html" class="home">Home</a>
+    <a href="transport.html" class="transport active">Transport</a>
+    <a href="harbour.html" class="harbour">Harbour circle</a>
+    </nav>
+
+
+
+
+    </header>
+
+
+    <aside class="sidebar transport-sb">
+
+        <img src="img/small/train-small.jpg" class="img-transport" alt="train">
+
+
+    </aside>
+
+    <main class="main-content transport-main">
+       <h2 class="pages-headers">The bike on the metro, train and harbour bus</h2>
+        <section class="transports transport-section1">
+            <h3 class="h-transport">Harbour waterbus</h3>
+            <div class="subline"></div>
+            <p>You can bring your bicycle on all waterbuses. You can see where the waterbuses dock on the map. Remember to buy a ticket for your bicycle</p>
+
+        </section>
+           <section class="transports transport-section2">
+            <h3 class="h-transport">Metro</h3>
+            <div class="subline"></div>
+            <p>You can bring your bicycle on the Metro at all hours except during the morning and afternoon rush hours from 7:00-9:00 am and 15:30-17:30. Remember to buy a ticket for your bicycle.</p>
+        </section>
+           <section class="transports transport-section3">
+            <h3 class="h-transport">S-train</h3>
+            <div class="subline"></div>
+            <p>
+ You can bring your bicycle on the metropolitan rail service (S-trains) at all hours free of charge. However, you may neither enter nor exit the train with a bicycle at Nørreport Station during rush hours from 7:00-8:30 am and 15:30-17:00 due to congestion.</p>
+        </section>
+           <section class="transports transport-section4">
+            <h3 class="h-transport">National rail</h3>
+            <div class="subline"></div>
+            <p>You may bring your bicycle on most national and regional trains, including InterCity and InterCityLyn trains, at all hours. You must purchase a ticket for your bicycle. When travelling with intercity trains you may also be required to make a seat reservation for your bicycle.</p>
+
+        </section>
+
+        <a href="https://intl.m.dk/#!/about+the+metro/tickets/bicycles" class="train-tickets">Find bike tickets for your train raid here</a>
+
+    </main>
+
+  <section class="video">
+       <h2>Why don't you bike?</h2>
+        <iframe src="https://www.youtube.com/embed/x4ri0KP_Pic" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+</body>
+</html>
